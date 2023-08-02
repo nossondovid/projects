@@ -1,0 +1,22 @@
+%navfooter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: black;
+  color: white;
+}
+
+%layout {
+  width: 85%;
+  margin: auto;
+}
+
+%productslayout {
+  display: flex;
+  flex-direction: column;
+}
+
+%tblborder {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}

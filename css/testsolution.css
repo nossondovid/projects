@@ -1,0 +1,167 @@
+footer, nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: black;
+  color: white;
+}
+
+main, footer span, nav ul {
+  width: 85%;
+  margin: auto;
+}
+
+.products, .products section {
+  display: flex;
+  flex-direction: column;
+}
+
+.table table, .table table th, .table table td {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 3em 0 3.5em;
+}
+
+main > section:not(#form) {
+  scroll-margin-top: 3em;
+}
+
+footer {
+  bottom: 0;
+}
+footer span {
+  display: flex;
+  padding: 1em;
+}
+
+nav {
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 1em;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+header {
+  text-align: center;
+  padding: 2em;
+  background-color: rgb(209, 206, 206);
+  font-weight: bold;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header span {
+  font-style: italic;
+}
+
+.products section h2 {
+  text-align: center;
+}
+.products section img,
+.products section video {
+  max-width: 100%;
+  max-height: auto;
+}
+.products section p {
+  text-align: justify;
+}
+
+@media (width >= 1000px) {
+  .products {
+    flex-direction: row;
+  }
+  section {
+    padding: 0 0.5em;
+  }
+  section:nth-child(1) {
+    padding-left: 0;
+  }
+  section:nth-child(3) {
+    padding-right: 0;
+  }
+  .choirs {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+}
+#form {
+  background-color: rgb(209, 206, 206);
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-radius: 0.5em;
+}
+#form h2 {
+  text-align: center;
+}
+#form form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+#form form input {
+  box-shadow: 2px 4px;
+  border-radius: 0.25em;
+}
+
+@media (width <= 1000px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.table {
+  overflow-x: auto;
+}
+.table table {
+  height: -moz-max-content;
+  height: max-content;
+  width: 85%;
+  margin: auto;
+}
+.table table caption {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.table table tbody tr:nth-child(odd) {
+  background-color: lightblue;
+}
+.table table tfoot th {
+  text-align: right;
+}
+.table table th {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.5em;
+}
+.table table tr:hover {
+  cursor: pointer;
+}
+.table table tr:hover:not(thead tr) {
+  background-color: rgb(51, 224, 236) !important;
+}
+.table table td {
+  text-align: right;
+  padding: 0.5em;
+}
+.table table td:last-child {
+  color: red;
+}/*# sourceMappingURL=testsolution.css.map */

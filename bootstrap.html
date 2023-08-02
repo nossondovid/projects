@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTUFF</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .nav-link {
+      color: white;
+    }
+
+    .nav-link:hover {
+      color: red;
+      text-decoration: underline;
+
+    }
+
+    .nav-item:first-child .nav-link {
+      padding-left: 0;
+    }
+
+    main>section:not(#form) {
+      scroll-margin-top: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="text-bg-dark position-fixed z-1 top-0 start-0 end-0">
+    <ul class="nav w-75 mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#form">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#financials">Financials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- main -->
+  <main class="w-75 mx-auto">
+    <header class="mb-3 text-center bg-secondary-subtle py-5 rounded-bottom-2">
+      <h1>ESTUFF</h1>
+      <h2>A <span class="fst-italic">PCS</span> company</h2>
+    </header>
+
+    <!-- products section -->
+
+    <section id="products">
+      <h2>Products</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque sint accusamus earum consectetur
+        quam magnam magni numquam illum beatae.</p>
+      <div class="products container-fluid px-0">
+        <div class="row">
+          <section class="computers col-lg-4 col-12 d-flex flex-column">
+            <h2 class="fs-3 text-center">Computers</h2>
+            <img class="mw-100" src="media/macworld.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sed voluptate odit velit accusamus
+              suscipit consequatur quisquam. Ea, asperiores sunt?</p>
+          </section>
+          <section class="choirs col-lg-4 col-12 d-flex flex-column">
+            <h2 class="fs-3 text-center">Choirs</h2>
+            <video class="mw-100" controls muted poster="media/shira.png">
+              <source src="media/testvideo.ogv" type="video/ogg">
+            </video>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sed voluptate odit velit accusamus
+              suscipit consequatur quisquam. Ea, asperiores sunt?</p>
+          </section>
+          <section class="candy col-lg-4 col-12 d-flex flex-column">
+            <h2 class="fs-3 text-center">Candy</h2>
+            <img class="mw-100" src="media/candy.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sed voluptate odit velit accusamus
+              suscipit consequatur quisquam. Ea, asperiores sunt?</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- form section -->
+
+    <section id="form" class="my-3 bg-secondary-subtle rounded-2">
+      <h2 class="text-center pt-5">Sign Me Up!</h2>
+      <form class="container gap-3 pb-3 pt-3 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+        action="/someplace.php" method="post" target="_blank">
+        <div class="row g-3 justify-content-center">
+          <div class="col-8 col-lg-6 name-input">
+            <label for="name" class="form-label">Name:</label>
+            <input class="form-control shadow" id="name" name="name" type="text" placeholder="Your Name" required>
+          </div>
+          <div class="col-8 col-lg-6 email-input">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-control shadow" id="email" name="email" type="email" placeholder="Your Email" required>
+          </div>
+          <button type="submit" class="mt-4 col-5 btn btn-primary">Sign me up!</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- financials -->
+
+    <section id="financials">
+      <h2>Financials</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia, tenetur neque cupiditate dicta quasi fugit
+        repudiandae consectetur doloribus iste!</p>
+      <div class="table-responsive">
+        <table class="w-75 mx-auto table table-bordered table-striped table-hover caption-top ">
+          <caption class="text-center fs-4 fw-bold text-dark">Profits - By Quarter</caption>
+          <thead>
+            <tr class="align-middle">
+              <th class="text-center align-middle" scope="col">Year</th>
+              <th class="text-center" scope="col">1st Quarter Profile</th>
+              <th class="text-center" scope="col">2nd Quarter Profile</th>
+              <th class="text-center" scope="col">3rd Quarter Profile</th>
+              <th class="text-center" scope="col">4th Quarter Profile</th>
+              <th class="text-center align-middle" scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <th class="text-center" scope="row">2012</th>
+              <td class="text-end">$1254564.32</td>
+              <td class="text-end">$1154545.67</td>
+              <td class="text-end">$1236566.98</td>
+              <td class="text-end">$1368546.32</td>
+              <td class="text-end text-danger fw-semibold">$5050934.29</td>
+            </tr>
+            <tr>
+              <th class="text-center" scope="row">2013</th>
+              <td class="text-end">$1385475.87</td>
+              <td class="text-end">$1485690.23</td>
+              <td class="text-end">$1365568.54</td>
+              <td class="text-end">$1545435.11</td>
+              <td class="text-end text-danger fw-semibold">$5623344.75</td>
+            </tr>
+            <tr class="table-info">
+              <th class="text-center" scope="row">2014</th>
+              <td class="text-end">$1589878.76</td>
+              <td class="text-end">$1696986.45</td>
+              <td class="text-end">$1645456.32</td>
+              <td class="text-end">$1789890.35</td>
+              <td class="text-end text-danger fw-semibold">$6545657.88</td>
+            </tr>
+            <tr>
+              <th class="text-center" scope="row">2015</th>
+              <td class="text-end">$1889776.22</td>
+              <td class="text-end">$1854565.71</td>
+              <td class="text-end">NA</td>
+              <td class="text-end">NA</td>
+              <td class="text-end text-danger fw-semibold">$3654654.93</td>
+            </tr>
+          <tfoot>
+            <tr>
+              <th class="text-end" colspan="5">Total</th>
+              <td class="text-end text-danger fw-semibold">$20978798.85</td>
+            </tr>
+          </tfoot>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section id="about" class="mb-5 mt-3">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut voluptates cum quod, omnis et doloribus quidem
+        laborum impedit pariatur eius dolorum eum? Libero fuga eum quibusdam labore incidunt animi ipsum voluptatum ea
+        officiis qui vel perspiciatis, temporibus omnis sequi exercitationem illo vitae similique sint odit asperiores
+        soluta quas esse. Perferendis, at. Iure suscipit natus molestias officiis illo voluptates aperiam rerum corporis
+        tempore quos laboriosam in quae accusamus id debitis nesciunt facere doloremque, sed fugiat commodi, dicta
+        consequuntur quidem. Atque tenetur similique explicabo magni, officia sequi minima quasi ratione! Quidem
+        mollitia voluptatem tenetur impedit hic minima, sunt sit quas corporis dignissimos. Minus temporibus labore,
+        exercitationem laudantium, in velit eos vitae nulla consectetur, dolores asperiores expedita veniam? Cum quod
+        quas iure, repudiandae libero, eveniet placeat totam nulla perspiciatis animi dolore voluptatum, consectetur
+        fuga! Quis provident sit id, neque delectus, expedita deleniti illo repudiandae, fugit doloribus maiores
+        eligendi atque veritatis quasi quidem error! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Doloremque nihil sed hic? Numquam perferendis quasi sit optio ullam maiores iusto impedit sequi repellat
+        similique aliquam neque libero, incidunt recusandae corrupti assumenda ut voluptate molestias. Dolor itaque vero
+        asperiores sapiente doloremque, qui error autem cupiditate excepturi. Odit vitae aut consequatur eligendi omnis
+        provident enim autem ducimus deserunt? Explicabo, cupiditate distinctio placeat maxime vel consectetur aut
+        voluptas aspernatur molestiae nam dignissimos odio nesciunt pariatur fugiat quidem! Ullam eveniet quos
+        architecto reprehenderit modi, atque, eligendi asperiores repudiandae rem tenetur itaque distinctio incidunt
+        provident cupiditate, nostrum qui ipsa! Laboriosam reiciendis blanditiis quisquam nam, culpa totam nulla
+        aliquid. Voluptatibus accusamus sed a minima quaerat rerum voluptatem earum iure quia voluptas ipsum error,
+        velit laborum provident placeat, alias repellendus atque voluptates assumenda tenetur neque minus beatae. Autem
+        harum assumenda illum qui nemo officiis culpa dolore eos voluptatem unde odit architecto non nisi laudantium
+        sapiente illo pariatur, quis dolorem voluptate quisquam vero adipisci possimus. Cumque non, molestiae
+        reprehenderit adipisci dignissimos quod libero consequatur? Repellendus corporis ducimus maxime optio eos
+        mollitia voluptas dignissimos magni facere labore sed, blanditiis obcaecati est libero excepturi quas! Ut animi
+        labore porro deserunt ipsam maiores veritatis, quis molestiae, in corrupti itaque. Quibusdam nemo eligendi iure
+        voluptatum aliquid, quas sequi, quae unde tenetur libero fugit aperiam autem veniam in id delectus? Provident
+        fugit unde maiores nostrum deleniti veritatis illum fugiat, quasi autem esse facere nobis repellendus ratione
+        quae tempora voluptatum consectetur, quidem impedit quas odit. Explicabo, omnis, earum eaque accusantium
+        exercitationem soluta ipsum veniam aliquid, consequuntur numquam officiis labore culpa asperiores vel vitae.
+        Voluptatibus aliquid atque error quas ullam animi quis. Nulla molestiae accusantium labore saepe nisi iste magni
+        consectetur dolor, neque nam dolorum, libero enim. Cupiditate eveniet officia repellendus delectus repellat
+        aspernatur doloribus odio, et laboriosam reiciendis, qui quis cum possimus nisi ab unde, recusandae voluptates
+        dolor voluptatem? Corporis optio ab repellendus commodi esse, ea veniam recusandae et dolor magni minus, iure
+        atque ut veritatis quam ex nulla mollitia est in maxime tenetur voluptas iusto. Obcaecati voluptate corporis
+        consequatur dicta architecto non, error, sunt sit quod culpa quisquam beatae ea voluptatem adipisci libero harum
+        et ipsa fugit laudantium nihil. Quae, sapiente. Deserunt culpa illo aut necessitatibus possimus laborum pariatur
+        dolorum dolor recusandae quibusdam ullam optio asperiores, quod provident dicta mollitia! Autem, reiciendis
+        similique ipsum, aliquid modi nemo alias ad ducimus libero distinctio facilis error! In, nobis quo. Placeat,
+        facilis. Delectus dolores ut saepe repudiandae adipisci, similique vitae velit laborum est, debitis numquam sit
+        earum deleniti, maiores magnam? Nulla, corrupti officia maxime consequatur earum in dolorum deleniti nam quo
+        voluptatibus repellat deserunt tempora debitis suscipit ipsam voluptatem aperiam. Voluptate, nesciunt libero
+        possimus optio earum consequuntur, repudiandae ratione perspiciatis sint eligendi unde distinctio obcaecati
+        consequatur?</p>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="text-bg-dark py-2 position-fixed z-1 bottom-0 start-0 end-0">
+    <span class="d-block w-75 mx-auto">PCS &copy; 2023</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

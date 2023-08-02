@@ -1,0 +1,203 @@
+@use 'extensions' as *;
+@use 'variables' as *;
+
+
+body {
+  font-family: $font-stack;
+  margin: 3em 0 3.5em;
+}
+
+main {
+  @extend %layout;
+
+  &>section:not(#form) {
+    scroll-margin-top: 3em;
+  }
+}
+
+footer {
+  @extend %navfooter;
+  bottom: 0;
+
+  span {
+    @extend %layout;
+    display: flex;
+    padding: $stdpad * 2;
+  }
+}
+
+nav {
+  @extend %navfooter;
+  top: 0;
+  z-index: 1;
+
+  ul {
+    @extend %layout;
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding: $stdpad * 2;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: red;
+    }
+  }
+}
+
+header {
+  text-align: center;
+  padding: $stdpad * 4;
+  background-color: $background;
+  font-weight: bold;
+  border-bottom-left-radius: $stdpad;
+  border-bottom-right-radius: $stdpad;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  span {
+    font-style: italic;
+  }
+}
+
+.products {
+  @extend %productslayout;
+
+  section {
+    @extend %productslayout;
+
+    h2 {
+      text-align: center;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      max-height: auto;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media (width >=1000px) {
+  .products {
+    flex-direction: row;
+  }
+
+  section {
+    padding: 0 $stdpad;
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3) {
+      padding-right: 0;
+    }
+
+  }
+
+  .choirs {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+}
+
+#form {
+  background-color: $background;
+  margin-top: $stdpad * 4;
+  padding-top: $stdpad * 4;
+  padding-bottom: $stdpad * 2;
+  border-radius: $stdpad;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    input {
+      box-shadow: 2px 4px;
+      border-radius: $stdpad / 2;
+    }
+  }
+}
+
+@media (width <=1000px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.table {
+  overflow-x: auto;
+
+  table {
+    @extend %tblborder;
+    height: max-content;
+    width: 85%;
+    margin: auto;
+
+    caption {
+      font-weight: bold;
+      margin-bottom: $stdpad*2;
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: lightblue
+        }
+      }
+    }
+
+    tfoot {
+      th {
+        text-align: right;
+      }
+    }
+
+    th {
+      @extend %tblborder;
+      vertical-align: middle;
+      text-align: center;
+      padding: $stdpad;
+    }
+
+
+    tr {
+      &:hover {
+        &:not(thead tr) {
+          background-color: rgb(51, 224, 236) !important;
+        }
+
+        cursor: pointer;
+      }
+    }
+
+    td {
+      @extend %tblborder;
+      text-align: right;
+      padding: $stdpad;
+
+      &:last-child {
+        color: red
+      }
+    }
+
+  }
+}
