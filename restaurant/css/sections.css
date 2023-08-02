@@ -1,0 +1,53 @@
+/* setting margins for main */
+main {
+    margin-left: 140px;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* miscellaneous styles */
+
+h2+h3 {
+    color: indigo;
+}
+
+img {
+    clear: left;
+    float: left;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+    width: 150px;
+    height: 165px;
+}
+
+/* fixing section-nav to the left */
+#section-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid black;
+    overflow-y: scroll;
+    max-width: 115px;
+    height: 100%;
+}
+
+/* setting borders to section nav li's */
+#section-nav li:not(:last-child) {
+    border-bottom: 2px solid #bbb;
+}
+
+/* top and bottom margins for h3's in section nav */
+#section-nav h3 {
+    margin: 0.25em auto
+}
+
+/* setting margins of univ-nav for small screens */
+@media screen and (max-width: 650px) {
+    #univ-nav {
+        margin-left: 50px;
+        margin-right: auto;
+    }
+}

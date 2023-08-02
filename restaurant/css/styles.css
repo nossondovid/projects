@@ -1,0 +1,143 @@
+/* styles for body, header, main*/
+body {
+    font-family: 'Geologica', sans-serif;
+    background-color: rgba(219, 141, 31);
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(../images/restaurant.jpg);
+    background-size: contain;
+    text-align: center;
+    max-height: 125px;
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+/* styles for univ-nav */
+
+#univ-nav {
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+
+nav ul {
+    display: flex;
+    background-color: rgb(180, 110, 12);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#univ-nav li:not(:last-child) {
+    border-right: 2px solid #bbb;
+
+}
+
+nav li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* styles for dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+/* styles for header and p elements */
+h1, h2, h3 {
+    color: rgb(252, 187, 9);
+
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgb(17, 64, 141);
+    font-style: italic;
+
+}
+
+h2 {
+    letter-spacing: 1px;
+    text-shadow: 3px 2px 3px rgb(8, 59, 143);
+}
+
+h3 {
+    text-shadow: 3px 3px 3px rgb(17, 64, 141);
+}
+
+p {
+    color: rgb(84, 37, 2);
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+/* styles for anchor tags */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(113, 17, 0);
+}
+
+a:focus {
+    color: chartreuse;
+}
+
+a:hover {
+    color: rgb(255, 204, 20);
+    cursor: pointer
+}
+
+a:active {
+    color: green;
+}

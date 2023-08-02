@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <style>
+        table {
+            color: rgb(119, 22, 22);
+            border-collapse: collapse;
+            width: 60%;
+            height: 70%;
+            margin: auto;
+        }
+
+
+        tbody tr:nth-child(odd) {
+            background-color: lightsteelblue;
+        }
+
+        td:last-child {
+            background-color: rgb(255, 242, 0);
+
+        }
+
+        tbody tr:hover td {
+            background-color: dodgerblue;
+        }
+
+
+        th,
+        td {
+            text-align: center;
+            padding: 0.5em;
+        }
+
+
+        tr:not(tfoot tr) {
+            border-bottom: 1px solid black;
+
+        }
+
+        td~td {
+            color: rgb(226, 43, 43);
+        }
+
+        [class="table-footer"] {
+            font-size: 1.5em;
+        }
+
+        tfoot {
+            font-weight: 700;
+            font-size: 1em;
+        }
+
+        caption::first-letter {
+            font-size: 24px;
+
+        }
+
+        caption {
+            padding: 1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>History</h1>
+    </header>
+    <nav>
+        <ul id="univ-nav">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="menu.html">Menu</a></li>
+                <div class="dropdown-content">
+                    <a href="appetizers.html">Appetizers</a>
+                    <a href="mains.html">Mains</a>
+                    <a href="desserts.html">Desserts</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+    <table>
+        <caption>
+            Growth of our restaurant!
+        </caption>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Average Daily customers</th>
+                <th>Customer Satisfaction</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td>2020</td>
+                <td>53</td>
+                <td>4 stars</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>64</td>
+                <td>4.3 stars</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>79</td>
+                <td>4.8 stars</td>
+            </tr>
+        </tbody>
+        <tfoot class="table-footer">
+            <tr>
+                <td>Averages</td>
+                <td>65</td>
+                <td>4.37</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
