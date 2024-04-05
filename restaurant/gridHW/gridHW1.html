@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_HW_1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body {
+            display: grid;
+            grid-template: 200px 50px 50px 200px / 200px 50px 50px 200px;
+            min-height: 100vh;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /* background color styles */
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+        /* grid area placements */
+        .red.big {
+            grid-area: 1/2/2/4;
+        }
+
+        .red.small {
+            grid-area: 2/2/3/3;
+        }
+
+        .green.big {
+            grid-area: 2/1/4/2;
+        }
+
+        .green.small {
+            grid-area: 3/2/4/3;
+        }
+
+        .purple.big {
+            grid-area: 2/4/4/5
+        }
+
+        .purple.small {
+            grid-area: 2/3/3/4;
+        }
+
+        .brown.big {
+            grid-area: 4/2/5/4;
+        }
+
+        .brown.small {
+            grid-area: 3/3/4/4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="red big"></div>
+    <div class="green big"></div>
+    <div class="purple big"></div>
+    <div class="brown big"></div>
+    <div class="red small"></div>
+    <div class="green small"></div>
+    <div class="purple small"></div>
+    <div class="brown small"></div>
+
+</body>
+
+</html>

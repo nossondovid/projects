@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_HW_2b-2</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <style>
+        div {
+            background-color: orange;
+        }
+
+        body {
+            display: grid;
+            min-height: 100vh;
+            gap: 0.1em;
+            grid-template: repeat(7, 25px) / 25px;
+            grid-template-areas:
+                "b1"
+                "b2"
+                "b3"
+                "b4"
+                "b5"
+                "b6"
+                "b7";
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .b1 {
+            grid-area: b1;
+        }
+
+        .b2 {
+            grid-area: b2;
+        }
+
+        .b3 {
+            grid-area: b3;
+        }
+
+        .b4 {
+            grid-area: b4;
+        }
+
+        .b5 {
+            grid-area: b5;
+        }
+
+        .b6 {
+            grid-area: b6;
+        }
+
+        .b7 {
+            grid-area: b7;
+        }
+
+        @media (700px <=width) {
+
+            div {
+                background-color: green;
+            }
+
+            body {
+                grid-template: repeat(4, 40px) / 25px 25px;
+                grid-template-areas:
+                    "b1 b1"
+                    "b2 b3"
+                    "b4 b5"
+                    "b6 b7";
+            }
+        }
+
+        @media (900px <=width) {
+
+            div {
+                background-color: brown;
+            }
+
+            body {
+                grid-template: 40px 40px / repeat(4, 25px);
+                grid-template-areas:
+                    "b1 b1 b2 b3"
+                    "b4 b5 b6 b7";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+    <div class="b5"></div>
+    <div class="b6"></div>
+    <div class="b7"></div>
+
+</body>
+
+</html>

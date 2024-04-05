@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_HW_2a</title>
+    <style>
+        body {
+            display: grid;
+            min-height: 100vh;
+            /* gap: 1em; */
+
+            grid-template: 200px 25px 25px 200px / 200px 25px 25px 200px;
+
+            grid-template-areas:
+                ". reds reds . "
+                "greens sreds spurples purples"
+                "greens sgreens sbrowns purples"
+                ". browns browns . ";
+
+            justify-content: center;
+            align-content: center;
+        }
+
+        .red {
+            background-color: red;
+            grid-area: reds;
+        }
+
+        .small-red {
+            background-color: red;
+            grid-area: sreds;
+        }
+
+        .purple {
+            background-color: purple;
+            grid-area: purples;
+        }
+
+        .small-purple {
+            background-color: purple;
+            grid-area: spurples;
+        }
+
+        .brown {
+            background-color: brown;
+            grid-area: browns;
+        }
+
+        .small-brown {
+            background-color: brown;
+            grid-area: sbrowns;
+        }
+
+        .green {
+            background-color: green;
+            grid-area: greens;
+        }
+
+        .small-green {
+            background-color: green;
+            grid-area: sgreens;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red"></div>
+    <div class="purple"></div>
+    <div class="brown"></div>
+    <div class="green"></div>
+    <div class="small-red"></div>
+    <div class="small-purple"></div>
+    <div class="small-brown"></div>
+    <div class="small-green"></div>
+
+
+
+</body>
+
+</html>

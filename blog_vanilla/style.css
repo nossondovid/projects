@@ -1,0 +1,29 @@
+#app {
+  display: flex;
+}
+#blogList {
+  width: 20%;
+  margin-right: 1em;
+  border-right: 1px solid black;
+}
+#blogInfo {
+  width: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+.comment {
+  font-size: 0.75rem;
+}
+
+.clickable {
+  all: unset;
+  color: blue;
+  text-decoration: underline;
+  outline: revert; /* keep the outline so that it's focusable */
+}
+.clickable:hover {
+  cursor: pointer;
+}
